@@ -23,10 +23,6 @@ abstract class Http4sServer extends HttpEndpointAlgebra with Http4sServerRespons
 
   private val currentTimeMillis = F.delay(System.currentTimeMillis())
 
-//  private val handleError = new (F ~> F) {
-//    override def apply[A](fa: F[A]): F[A] = F.handleErrorWith()
-//  }
-
   @silent
   final case class HttpEndpoint[A, B](request: HttpRequest[A], response: HttpResponse[B]) {
 
