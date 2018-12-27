@@ -1,0 +1,11 @@
+name: itinere
+baseurl: /itinere
+description: Describe HTTP REST/JSON endpoints
+highlighter: rouge
+docs: true
+collections:
+  tut:
+    output: true
+version: 0.2.0+14-3aaedbd0
+org: net.vectos
+markdown: kramdown
