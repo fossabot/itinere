@@ -1,13 +1,266 @@
 <html><head><title>itinere: Home</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Vectos" /><meta name="description" content="Describe HTTP REST/JSON endpoints" /><meta name="og:image" content="/itinere/img/poster.png" /><meta name="og:title" content="itinere: Home" /><meta name="og:site_name" content="itinere" /><meta name="og:url" content="" /><meta name="og:type" content="website" /><meta name="og:description" content="Describe HTTP REST/JSON endpoints" /><link rel="icon" type="image/png" href="/itinere/img/favicon.png" /><meta name="twitter:title" content="itinere: Home" /><meta name="twitter:image" content="img/poster.png" /><meta name="twitter:description" content="Describe HTTP REST/JSON endpoints" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@mark_dj" /><link rel="icon" type="image/png" sizes="16x16" href="/itinere/img/favicon16x16.png" /><link rel="icon" type="image/png" sizes="24x24" href="/itinere/img/favicon24x24.png" /><link rel="icon" type="image/png" sizes="32x32" href="/itinere/img/favicon32x32.png" /><link rel="icon" type="image/png" sizes="48x48" href="/itinere/img/favicon48x48.png" /><link rel="icon" type="image/png" sizes="57x57" href="/itinere/img/favicon57x57.png" /><link rel="icon" type="image/png" sizes="60x60" href="/itinere/img/favicon60x60.png" /><link rel="icon" type="image/png" sizes="64x64" href="/itinere/img/favicon64x64.png" /><link rel="icon" type="image/png" sizes="70x70" href="/itinere/img/favicon70x70.png" /><link rel="icon" type="image/png" sizes="72x72" href="/itinere/img/favicon72x72.png" /><link rel="icon" type="image/png" sizes="76x76" href="/itinere/img/favicon76x76.png" /><link rel="icon" type="image/png" sizes="96x96" href="/itinere/img/favicon96x96.png" /><link rel="icon" type="image/png" sizes="114x114" href="/itinere/img/favicon114x114.png" /><link rel="icon" type="image/png" sizes="120x120" href="/itinere/img/favicon120x120.png" /><link rel="icon" type="image/png" sizes="128x128" href="/itinere/img/favicon128x128.png" /><link rel="icon" type="image/png" sizes="144x144" href="/itinere/img/favicon144x144.png" /><link rel="icon" type="image/png" sizes="150x150" href="/itinere/img/favicon150x150.png" /><link rel="icon" type="image/png" sizes="152x152" href="/itinere/img/favicon152x152.png" /><link rel="icon" type="image/png" sizes="196x196" href="/itinere/img/favicon196x196.png" /><link rel="icon" type="image/png" sizes="310x310" href="/itinere/img/favicon310x310.png" /><link rel="icon" type="image/png" sizes="310x150" href="/itinere/img/favicon310x150.png" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /><link rel="stylesheet" href="/itinere/highlight/styles/default.css" /><link rel="stylesheet" href="/itinere/css/style.css" /><link rel="stylesheet" href="/itinere/css/palette.css" /><link rel="stylesheet" href="/itinere/css/codemirror.css" /><link rel="stylesheet" href="/itinere/css/custom.css" /><link rel="stylesheet" href="/itinere/css/theme-code.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Do Hyeon" /></head><body><header id="site-header"><div class="navbar-wrapper"><div class="container"><div class="row"><div class="col-xs-6"><a href="/itinere/" class="brand"><div class="icon-wrapper"><span>itinere</span></div></a></div><div class="col-xs-6"><nav class="text-right"><ul class=""><li><a href="https://github.com/vectos/itinere"><i class="fa fa-github"></i><span class="hidden-xs">GitHub</span></a></li><li><a href="/itinere/docs/"><i class="fa fa-file-text"></i><span class="hidden-xs">Documentation</span></a></li></ul></nav></div></div></div></div><div class="jumbotron"><div class="container"><h1 class="text-center">Describe HTTP REST/JSON endpoints</h1><h2></h2><p class="text-center"><a href="https://github.com/vectos/itinere" class="btn btn-outline-inverse">View on GitHub</a></p></div></div><div><ul class="horizontalNav">      </ul></div></header><main id="site-main"><section class="use"><div class="container"><div id="content"><p><a href="https://travis-ci.org/vectos/formulation"><img src="https://api.travis-ci.org/vectos/itinere.svg" alt="Build Status" /></a>
 <a href="http://codecov.io/github/vectos/itinere?branch=master"><img src="http://codecov.io/github/vectos/itinere/coverage.svg?branch=master" alt="codecov.io" /></a></p>
 
-</div></div></section><section class="technologies"><div class="container"><div class="row">
-            <div class="col-md-4"><div class="first-icon-wrapper"></div><h3>Expressive</h3><p>It supports the most primitive data types in Scala and allows you to `imap` or `pmap` them. Once you've defined a `Avro[A]` for a type, you can reuse these definitions to build up bigger types.</p></div>
-          
-            <div class="col-md-4"><div class="second-icon-wrapper"></div><h3>Define data types by hand</h3><p>Avro4s derives schema's, encoders and decoders magically. While this is nice, it can become unwieldy when you have a nested type graph. I believe it's better to explicitly map your data types, so the cognitive process of defining a schema is part of your job instead of a magic macro. This will become important when you want to enforce full compatibility of your schema's</p></div>
-          
-            <div class="col-md-4"><div class="third-icon-wrapper"></div><h3>Concise</h3><p>The combinators `imap` and `pmap` makes it easy to introduce support for new data types, while this is verbose in Avro4s. Also the DSL provides a way of describing a schema in type-safe and terse fashion instead of typing JSON files.</p></div>
-          </div></div></section></main><footer id="site-footer"><div class="container"><div class="row"><div class="col-xs-6"><p>itinere is designed and developed by <a href="http://vectos.net" target="_blank">Vectos</a></p></div><div class="col-xs-6"><p class="text-right"><a href="https://github.com/vectos/itinere"><span class="fa fa-github"></span>View on GitHub</a></p></div></div><div class="row"><div class="col-xs-6"><p>Website built with <a href="https://47deg.github.io/sbt-microsites/" target="_blank">Sbt-microsites</a> - © 2016 <a href="https://www.47deg.com/" target="_blank">47 Degrees</a></p></div></div></div></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script><script src="/itinere/highlight/highlight.pack.js"></script><script>hljs.configure({
+<h1 id="minimal-example">Minimal example</h1>
+
+<h3 id="imports">Imports</h3>
+
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="k">import</span> <span class="nn">cats.implicits._</span>
+<span class="k">import</span> <span class="nn">cats.effect.</span><span class="o">{</span><span class="nc">IO</span><span class="o">,</span> <span class="nc">Effect</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">cats.Show</span>
+</code></pre>
+</div>
+
+<h3 id="protocol-definition">Protocol definition</h3>
+
+<p>This is typically defined in a module with minimal dependencies like only the domain, the <code class="highlighter-rouge">itinere-core</code> and <code class="highlighter-rouge">itinere-refined</code> modules.</p>
+
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="k">import</span> <span class="nn">itinere._</span>
+
+<span class="k">sealed</span> <span class="k">trait</span> <span class="nc">DomainResponse</span><span class="o">[</span><span class="kt">+A</span><span class="o">]</span>
+<span class="nc">object</span> <span class="nc">DomainResponse</span> <span class="o">{</span>
+  <span class="k">final</span> <span class="k">case</span> <span class="k">class</span> <span class="nc">Success</span><span class="o">[</span><span class="kt">A</span><span class="o">](</span><span class="n">value</span><span class="k">:</span> <span class="kt">A</span><span class="o">)</span> <span class="k">extends</span> <span class="nc">DomainResponse</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span>
+  <span class="k">final</span> <span class="k">case</span> <span class="k">class</span> <span class="nc">BadRequest</span><span class="o">(</span><span class="n">error</span><span class="k">:</span> <span class="kt">String</span><span class="o">)</span> <span class="k">extends</span> <span class="nc">DomainResponse</span><span class="o">[</span><span class="kt">Nothing</span><span class="o">]</span>
+  <span class="k">final</span> <span class="k">case</span> <span class="k">class</span> <span class="nc">NotFound</span><span class="o">(</span><span class="n">error</span><span class="k">:</span> <span class="kt">String</span><span class="o">)</span> <span class="k">extends</span> <span class="nc">DomainResponse</span><span class="o">[</span><span class="kt">Nothing</span><span class="o">]</span>
+
+  <span class="k">def</span> <span class="n">success</span><span class="o">[</span><span class="kt">A</span><span class="o">](</span><span class="n">value</span><span class="k">:</span> <span class="kt">Json</span><span class="o">[</span><span class="kt">A</span><span class="o">])</span><span class="k">:</span> <span class="kt">Json</span><span class="o">[</span><span class="kt">Success</span><span class="o">[</span><span class="kt">A</span><span class="o">]]</span> <span class="k">=</span> <span class="nc">Json</span><span class="o">.</span><span class="n">object1</span><span class="o">(</span><span class="s">"Success"</span><span class="o">)(</span><span class="nc">Success</span><span class="o">[</span><span class="kt">A</span><span class="o">](</span><span class="k">_</span><span class="o">))(</span><span class="s">"value"</span> <span class="o">-&gt;</span> <span class="n">member</span><span class="o">(</span><span class="n">value</span><span class="o">,</span> <span class="k">_</span><span class="o">.</span><span class="n">value</span><span class="o">))</span>
+  <span class="k">val</span> <span class="n">badRequest</span><span class="k">:</span> <span class="kt">Json</span><span class="o">[</span><span class="kt">BadRequest</span><span class="o">]</span> <span class="k">=</span> <span class="nc">Json</span><span class="o">.</span><span class="n">object1</span><span class="o">(</span><span class="s">"BadRequest"</span><span class="o">)(</span><span class="nc">BadRequest</span><span class="o">.</span><span class="n">apply</span><span class="o">)(</span><span class="s">"error"</span> <span class="o">-&gt;</span> <span class="n">member</span><span class="o">(</span><span class="nc">Json</span><span class="o">.</span><span class="n">string</span><span class="o">,</span> <span class="k">_</span><span class="o">.</span><span class="n">error</span><span class="o">))</span>
+  <span class="k">val</span> <span class="n">notFound</span><span class="k">:</span> <span class="kt">Json</span><span class="o">[</span><span class="kt">NotFound</span><span class="o">]</span> <span class="k">=</span> <span class="nc">Json</span><span class="o">.</span><span class="n">object1</span><span class="o">(</span><span class="s">"NotFound"</span><span class="o">)(</span><span class="nc">NotFound</span><span class="o">.</span><span class="n">apply</span><span class="o">)(</span><span class="s">"error"</span> <span class="o">-&gt;</span> <span class="n">member</span><span class="o">(</span><span class="nc">Json</span><span class="o">.</span><span class="n">string</span><span class="o">,</span> <span class="k">_</span><span class="o">.</span><span class="n">error</span><span class="o">))</span>
+<span class="o">}</span>
+
+<span class="k">final</span> <span class="k">case</span> <span class="k">class</span> <span class="nc">User</span><span class="o">(</span><span class="n">id</span><span class="k">:</span> <span class="kt">Long</span><span class="o">,</span> <span class="n">name</span><span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="n">age</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span>
+
+<span class="k">trait</span> <span class="nc">Endpoints</span> <span class="k">extends</span> <span class="nc">HttpEndpointAlgebra</span> <span class="k">with</span> <span class="nc">HttpJsonAlgebra</span> <span class="o">{</span>
+
+  <span class="k">val</span> <span class="n">userJson</span><span class="k">:</span> <span class="kt">Json</span><span class="o">[</span><span class="kt">User</span><span class="o">]</span> <span class="k">=</span> <span class="nc">Json</span><span class="o">.</span><span class="n">object3</span><span class="o">(</span><span class="s">"User"</span><span class="o">)(</span><span class="nc">User</span><span class="o">.</span><span class="n">apply</span><span class="o">)(</span>
+    <span class="s">"id"</span>   <span class="o">-&gt;</span> <span class="n">member</span><span class="o">(</span><span class="nc">Json</span><span class="o">.</span><span class="n">long</span><span class="o">,</span> <span class="k">_</span><span class="o">.</span><span class="n">id</span><span class="o">),</span>
+    <span class="s">"name"</span> <span class="o">-&gt;</span> <span class="n">member</span><span class="o">(</span><span class="nc">Json</span><span class="o">.</span><span class="n">string</span><span class="o">,</span> <span class="k">_</span><span class="o">.</span><span class="n">name</span><span class="o">),</span>
+    <span class="s">"age"</span>  <span class="o">-&gt;</span> <span class="n">member</span><span class="o">(</span><span class="nc">Json</span><span class="o">.</span><span class="n">int</span><span class="o">,</span> <span class="k">_</span><span class="o">.</span><span class="n">age</span><span class="o">)</span>
+  <span class="o">)</span>
+
+  <span class="k">val</span> <span class="n">userGet</span> <span class="k">=</span>
+    <span class="n">endpoint</span><span class="o">(</span>
+      <span class="n">request</span><span class="o">(</span><span class="nc">HttpMethod</span><span class="o">.</span><span class="nc">GET</span><span class="o">,</span> <span class="n">path</span> <span class="o">/</span> <span class="s">"users"</span> <span class="o">/</span> <span class="n">segment</span><span class="o">(</span><span class="s">"userId"</span><span class="o">,</span> <span class="k">_</span><span class="o">.</span><span class="n">long</span><span class="o">)),</span>
+      <span class="n">domainResponse</span><span class="o">(</span><span class="n">userJson</span><span class="o">),</span>
+      <span class="nc">EndpointCategory</span><span class="o">.</span><span class="n">users</span><span class="o">,</span>
+      <span class="s">"Endpoint for getting a specific users"</span>
+    <span class="o">)</span>
+
+  <span class="k">def</span> <span class="n">domainResponse</span><span class="o">[</span><span class="kt">A</span><span class="o">](</span><span class="n">value</span><span class="k">:</span> <span class="kt">Json</span><span class="o">[</span><span class="kt">A</span><span class="o">])</span><span class="k">:</span> <span class="kt">HttpResponse</span><span class="o">[</span><span class="kt">DomainResponse</span><span class="o">[</span><span class="kt">A</span><span class="o">]]</span> <span class="k">=</span>
+    <span class="n">anyOf</span>
+      <span class="o">.</span><span class="n">opt</span><span class="o">(</span><span class="n">response</span><span class="o">(</span><span class="nc">HttpStatus</span><span class="o">.</span><span class="nc">Ok</span><span class="o">,</span> <span class="s">"Response in case of success"</span><span class="o">,</span> <span class="n">entity</span> <span class="k">=</span> <span class="n">jsonResponse</span><span class="o">(</span><span class="nc">DomainResponse</span><span class="o">.</span><span class="n">success</span><span class="o">(</span><span class="n">value</span><span class="o">))))</span>
+      <span class="o">.</span><span class="n">opt</span><span class="o">(</span><span class="n">response</span><span class="o">(</span><span class="nc">HttpStatus</span><span class="o">.</span><span class="nc">NotFound</span><span class="o">,</span> <span class="s">"Response in case of the entity was not found"</span><span class="o">,</span> <span class="n">entity</span> <span class="k">=</span> <span class="n">jsonResponse</span><span class="o">(</span><span class="nc">DomainResponse</span><span class="o">.</span><span class="n">notFound</span><span class="o">)))</span>
+      <span class="o">.</span><span class="n">opt</span><span class="o">(</span><span class="n">response</span><span class="o">(</span><span class="nc">HttpStatus</span><span class="o">.</span><span class="nc">BadRequest</span><span class="o">,</span> <span class="s">"Response in case of the request body or parameters were in correct"</span><span class="o">,</span> <span class="n">entity</span> <span class="k">=</span> <span class="n">jsonResponse</span><span class="o">(</span><span class="nc">DomainResponse</span><span class="o">.</span><span class="n">badRequest</span><span class="o">)))</span>
+      <span class="o">.</span><span class="n">as</span><span class="o">[</span><span class="kt">DomainResponse</span><span class="o">[</span><span class="kt">A</span><span class="o">]]</span>
+
+  <span class="k">sealed</span> <span class="k">abstract</span> <span class="k">class</span> <span class="nc">EndpointCategory</span><span class="o">(</span><span class="k">val</span> <span class="n">value</span><span class="k">:</span> <span class="kt">String</span><span class="o">)</span>
+  <span class="k">object</span> <span class="nc">EndpointCategory</span> <span class="o">{</span>
+    <span class="k">case</span> <span class="k">object</span> <span class="nc">Users</span> <span class="k">extends</span> <span class="nc">EndpointCategory</span><span class="o">(</span><span class="s">"Users"</span><span class="o">)</span>
+
+    <span class="k">def</span> <span class="n">users</span><span class="k">:</span> <span class="kt">EndpointCategory</span> <span class="o">=</span> <span class="nc">Users</span>
+
+    <span class="k">implicit</span> <span class="k">val</span> <span class="n">show</span><span class="k">:</span> <span class="kt">Show</span><span class="o">[</span><span class="kt">EndpointCategory</span><span class="o">]</span> <span class="k">=</span> <span class="nc">Show</span><span class="o">.</span><span class="n">show</span><span class="o">(</span><span class="k">_</span><span class="o">.</span><span class="n">value</span><span class="o">)</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+
+<h3 id="http4s-server">Http4s server</h3>
+
+<p>This uses the protocol definition to implement a type-safe server, to encode/decode HTTP/JSON as described in the protocol definition, thus removing the overhead to do it yourself.</p>
+
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="k">import</span> <span class="nn">itinere.circe.CirceJsonLike</span>
+<span class="k">import</span> <span class="nn">itinere.http4s_server.</span><span class="o">{</span><span class="nc">Http4sServer</span><span class="o">,</span> <span class="nc">Http4sServerJson</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">org.http4s._</span>
+
+<span class="k">object</span> <span class="nc">EndpointsHttp4sServer</span> <span class="k">extends</span> <span class="nc">Http4sServer</span> <span class="k">with</span> <span class="nc">Endpoints</span> <span class="k">with</span> <span class="nc">Http4sServerJson</span> <span class="k">with</span> <span class="nc">CirceJsonLike</span> <span class="o">{</span>
+  <span class="k">override</span> <span class="k">type</span> <span class="kt">F</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span> <span class="k">=</span> <span class="nc">IO</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span>
+  <span class="k">override</span> <span class="k">def</span> <span class="n">F</span><span class="k">:</span> <span class="kt">Effect</span><span class="o">[</span><span class="kt">IO</span><span class="o">]</span> <span class="k">=</span> <span class="nc">Effect</span><span class="o">[</span><span class="kt">IO</span><span class="o">]</span>
+
+  <span class="k">val</span> <span class="n">routes</span> <span class="k">=</span>
+    <span class="n">userGet</span><span class="o">.</span><span class="n">implementedBy</span> <span class="o">{</span> <span class="k">case</span> <span class="n">uid</span> <span class="k">=&gt;</span> <span class="nc">IO</span><span class="o">.</span><span class="n">pure</span><span class="o">(</span><span class="k">if</span> <span class="o">(</span><span class="n">uid</span> <span class="o">==</span> <span class="mi">1</span><span class="n">l</span><span class="o">)</span> <span class="nc">DomainResponse</span><span class="o">.</span><span class="nc">Success</span><span class="o">(</span><span class="nc">User</span><span class="o">(</span><span class="n">uid</span><span class="o">,</span> <span class="s">"Klaas"</span><span class="o">,</span> <span class="mi">3</span><span class="o">))</span> <span class="k">else</span> <span class="nc">DomainResponse</span><span class="o">.</span><span class="nc">NotFound</span><span class="o">(</span><span class="s">"User was not found"</span><span class="o">))</span> <span class="o">}</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+
+<p>Now lets use our server!</p>
+
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="k">import</span> <span class="nn">org.http4s.implicits._</span>
+
+<span class="k">val</span> <span class="n">request</span> <span class="k">=</span> <span class="nc">IO</span><span class="o">.</span><span class="n">pure</span><span class="o">(</span><span class="nc">Request</span><span class="o">[</span><span class="kt">IO</span><span class="o">](</span><span class="nc">Method</span><span class="o">.</span><span class="nc">GET</span><span class="o">,</span> <span class="nc">Uri</span><span class="o">.</span><span class="n">uri</span><span class="o">(</span><span class="s">"/users/1"</span><span class="o">)))</span>
+<span class="k">val</span> <span class="n">router</span> <span class="k">=</span> <span class="nc">EndpointsHttp4sServer</span><span class="o">.</span><span class="n">routes</span><span class="o">.</span><span class="n">orNotFound</span>
+</code></pre>
+</div>
+
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="k">val</span> <span class="n">resp</span> <span class="k">=</span> <span class="n">request</span><span class="o">.</span><span class="n">flatMap</span><span class="o">(</span><span class="n">router</span><span class="o">.</span><span class="n">run</span><span class="o">).</span><span class="n">unsafeRunSync</span><span class="o">()</span>
+</code></pre>
+</div>
+
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="n">scala</span><span class="o">&gt;</span> <span class="n">resp</span><span class="o">.</span><span class="n">status</span>
+<span class="n">res5</span><span class="k">:</span> <span class="kt">org.http4s.Status</span> <span class="o">=</span> <span class="mi">200</span> <span class="nc">OK</span>
+
+<span class="n">scala</span><span class="o">&gt;</span> <span class="n">resp</span><span class="o">.</span><span class="n">as</span><span class="o">[</span><span class="kt">String</span><span class="o">].</span><span class="n">unsafeRunSync</span><span class="o">()</span>
+<span class="n">res6</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="o">{</span><span class="s">"value"</span><span class="k">:</span><span class="o">{</span><span class="err">"</span><span class="kt">id</span><span class="err">"</span><span class="kt">:</span><span class="err">1</span><span class="o">,</span><span class="err">"</span><span class="kt">name</span><span class="err">"</span><span class="kt">:</span><span class="err">"</span><span class="kt">Klaas</span><span class="err">"</span><span class="o">,</span><span class="s">"age"</span><span class="k">:</span><span class="err">3</span><span class="o">}}</span>
+</code></pre>
+</div>
+
+<h3 id="openapi-definition">Openapi definition</h3>
+
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="k">import</span> <span class="nn">itinere.openapi.</span><span class="o">{</span><span class="nc">OpenApiGen</span><span class="o">,</span> <span class="nc">OpenApiGenJson</span><span class="o">,</span> <span class="nc">OpenApiInfo</span><span class="o">,</span> <span class="nc">OpenApiRoot</span><span class="o">,</span> <span class="nc">OpenApiServer</span><span class="o">}</span>
+
+<span class="k">object</span> <span class="nc">OpenApiEndpoints</span> <span class="k">extends</span> <span class="nc">OpenApiGen</span> <span class="k">with</span> <span class="nc">Endpoints</span> <span class="k">with</span> <span class="nc">OpenApiGenJson</span>
+
+<span class="k">val</span> <span class="n">api</span> <span class="k">=</span> <span class="nc">OpenApiEndpoints</span>
+<span class="k">val</span> <span class="n">apiServers</span> <span class="k">=</span> <span class="nc">Set</span><span class="o">(</span><span class="nc">OpenApiServer</span><span class="o">(</span><span class="s">"http://localhost:8080"</span><span class="o">))</span>
+<span class="k">val</span> <span class="n">apiInfo</span> <span class="k">=</span> <span class="nc">OpenApiInfo</span><span class="o">(</span><span class="s">"Test API"</span><span class="o">,</span> <span class="s">"1.0"</span><span class="o">,</span> <span class="s">"This is a test api"</span><span class="o">)</span>
+<span class="k">val</span> <span class="n">spec</span> <span class="k">=</span> <span class="nc">OpenApiGen</span><span class="o">.</span><span class="n">api</span><span class="o">(</span><span class="n">apiInfo</span><span class="o">,</span> <span class="n">apiServers</span><span class="o">)(</span><span class="n">api</span><span class="o">.</span><span class="n">userGet</span><span class="o">)</span>
+</code></pre>
+</div>
+
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="k">import</span> <span class="nn">io.circe.Printer</span>
+<span class="k">import</span> <span class="nn">itinere.openapi.circe.openApiToJson</span>
+</code></pre>
+</div>
+
+<p>You could paste the following JSON in <a href="http://editor.swagger.io">http://editor.swagger.io</a></p>
+
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="n">scala</span><span class="o">&gt;</span> <span class="nc">Printer</span><span class="o">.</span><span class="n">spaces2</span><span class="o">.</span><span class="n">copy</span><span class="o">(</span><span class="n">dropNullValues</span> <span class="k">=</span> <span class="kc">true</span><span class="o">).</span><span class="n">pretty</span><span class="o">(</span><span class="n">openApiToJson</span><span class="o">(</span><span class="n">spec</span><span class="o">))</span>
+<span class="n">res9</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span>
+<span class="o">{</span>
+  <span class="s">"paths"</span> <span class="k">:</span> <span class="o">{</span>
+    <span class="err">"</span><span class="kt">/users/</span><span class="o">{</span><span class="kt">userId</span><span class="o">}</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+      <span class="err">"</span><span class="kt">get</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+        <span class="err">"</span><span class="kt">tags</span><span class="err">"</span> <span class="kt">:</span> <span class="err">[</span>
+          <span class="err">"</span><span class="kt">Users</span><span class="err">"</span>
+        <span class="err">]</span><span class="o">,</span>
+        <span class="err">"</span><span class="kt">parameters</span><span class="err">"</span> <span class="kt">:</span> <span class="err">[</span>
+          <span class="o">{</span>
+            <span class="err">"</span><span class="kt">name</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">userId</span><span class="err">"</span><span class="o">,</span>
+            <span class="err">"</span><span class="kt">in</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">path</span><span class="err">"</span><span class="o">,</span>
+            <span class="err">"</span><span class="kt">schema</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+              <span class="err">"</span><span class="k">type</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">integer</span><span class="err">"</span>
+            <span class="o">},</span>
+            <span class="err">"</span><span class="kt">required</span><span class="err">"</span> <span class="kt">:</span> <span class="kt">true</span>
+          <span class="o">}</span>
+        <span class="err">]</span><span class="o">,</span>
+        <span class="s">"summary"</span> <span class="k">:</span> <span class="err">"</span><span class="kt">Endpoint</span> <span class="kt">for</span> <span class="kt">getting</span> <span class="kt">a</span> <span class="kt">specific</span> <span class="kt">users</span><span class="err">"</span><span class="o">,</span>
+        <span class="s">"responses"</span> <span class="k">:</span> <span class="o">{</span>
+          <span class="err">"400"</span> <span class="kt">:</span> <span class="o">{</span>
+            <span class="err">"</span><span class="kt">content</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+              <span class="err">"</span><span class="kt">application/json</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+                <span class="err">"</span><span class="kt">schema</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+                  <span class="err">"</span><span class="kt">$ref</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="k">#</span><span class="kt">/components/schemas/BadRequest</span><span class="err">"</span>
+                <span class="o">}</span>
+              <span class="o">}</span>
+            <span class="o">},</span>
+            <span class="err">"</span><span class="kt">description</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">Response</span> <span class="kt">in</span> <span class="kt">case</span> <span class="kt">of</span> <span class="kt">the</span> <span class="kt">request</span> <span class="kt">body</span> <span class="kt">or</span> <span class="kt">parameters</span> <span class="kt">were</span> <span class="kt">in</span> <span class="kt">correct</span><span class="err">"</span>
+          <span class="o">},</span>
+          <span class="s">"404"</span> <span class="k">:</span> <span class="o">{</span>
+            <span class="err">"</span><span class="kt">content</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+              <span class="err">"</span><span class="kt">application/json</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+                <span class="err">"</span><span class="kt">schema</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+                  <span class="err">"</span><span class="kt">$ref</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="k">#</span><span class="kt">/components/schemas/NotFound</span><span class="err">"</span>
+                <span class="o">}</span>
+              <span class="o">}</span>
+            <span class="o">},</span>
+            <span class="err">"</span><span class="kt">description</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">Response</span> <span class="kt">in</span> <span class="kt">case</span> <span class="kt">of</span> <span class="kt">the</span> <span class="kt">entity</span> <span class="kt">was</span> <span class="kt">not</span> <span class="kt">found</span><span class="err">"</span>
+          <span class="o">},</span>
+          <span class="s">"200"</span> <span class="k">:</span> <span class="o">{</span>
+            <span class="err">"</span><span class="kt">content</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+              <span class="err">"</span><span class="kt">application/json</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+                <span class="err">"</span><span class="kt">schema</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+                  <span class="err">"</span><span class="kt">$ref</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="k">#</span><span class="kt">/components/schemas/Success</span><span class="err">"</span>
+                <span class="o">}</span>
+              <span class="o">}</span>
+            <span class="o">},</span>
+            <span class="err">"</span><span class="kt">description</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">Response</span> <span class="kt">in</span> <span class="kt">case</span> <span class="kt">of</span> <span class="kt">success</span><span class="err">"</span>
+          <span class="o">}</span>
+        <span class="o">}</span>
+      <span class="o">}</span>
+    <span class="o">}</span>
+  <span class="o">},</span>
+  <span class="s">"openapi"</span> <span class="k">:</span> <span class="err">"3</span><span class="kt">.</span><span class="err">0</span><span class="kt">.</span><span class="err">0"</span><span class="o">,</span>
+  <span class="s">"info"</span> <span class="k">:</span> <span class="o">{</span>
+    <span class="err">"</span><span class="kt">title</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">Test</span> <span class="kt">API</span><span class="err">"</span><span class="o">,</span>
+    <span class="err">"</span><span class="kt">version</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"1</span><span class="kt">.</span><span class="err">0"</span><span class="o">,</span>
+    <span class="s">"description"</span> <span class="k">:</span> <span class="err">"</span><span class="kt">This</span> <span class="kt">is</span> <span class="kt">a</span> <span class="kt">test</span> <span class="kt">api</span><span class="err">"</span>
+  <span class="o">},</span>
+  <span class="s">"components"</span> <span class="k">:</span> <span class="o">{</span>
+    <span class="err">"</span><span class="kt">schemas</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+      <span class="err">"</span><span class="kt">BadRequest</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+        <span class="err">"</span><span class="k">type</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">object</span><span class="err">"</span><span class="o">,</span>
+        <span class="err">"</span><span class="kt">properties</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+          <span class="err">"</span><span class="kt">error</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+            <span class="err">"</span><span class="k">type</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">string</span><span class="err">"</span>
+          <span class="o">}</span>
+        <span class="o">},</span>
+        <span class="err">"</span><span class="kt">required</span><span class="err">"</span> <span class="kt">:</span> <span class="err">[</span>
+          <span class="err">"</span><span class="kt">error</span><span class="err">"</span>
+        <span class="err">]</span>
+      <span class="o">},</span>
+      <span class="s">"NotFound"</span> <span class="k">:</span> <span class="o">{</span>
+        <span class="err">"</span><span class="k">type</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">object</span><span class="err">"</span><span class="o">,</span>
+        <span class="err">"</span><span class="kt">properties</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+          <span class="err">"</span><span class="kt">error</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+            <span class="err">"</span><span class="k">type</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">string</span><span class="err">"</span>
+          <span class="o">}</span>
+        <span class="o">},</span>
+        <span class="s">"required"</span> <span class="k">:</span> <span class="err">[</span>
+          <span class="err">"</span><span class="kt">error</span><span class="err">"</span>
+        <span class="err">]</span>
+      <span class="o">},</span>
+      <span class="s">"User"</span> <span class="k">:</span> <span class="o">{</span>
+        <span class="err">"</span><span class="k">type</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">object</span><span class="err">"</span><span class="o">,</span>
+        <span class="err">"</span><span class="kt">properties</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+          <span class="err">"</span><span class="kt">id</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+            <span class="err">"</span><span class="kt">exclusiveMaximum</span><span class="err">"</span> <span class="kt">:</span> <span class="kt">false</span><span class="o">,</span>
+            <span class="err">"</span><span class="kt">format</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">int64</span><span class="err">"</span><span class="o">,</span>
+            <span class="err">"</span><span class="kt">maximum</span><span class="err">"</span> <span class="kt">:</span> <span class="err">9223372036854775807</span><span class="o">,</span>
+            <span class="s">"exclusiveMinimum"</span> <span class="k">:</span> <span class="kt">false</span><span class="o">,</span>
+            <span class="s">"minimum"</span> <span class="k">:</span> <span class="kt">-</span><span class="err">9223372036854775808</span><span class="o">,</span>
+            <span class="s">"type"</span> <span class="k">:</span> <span class="err">"</span><span class="kt">integer</span><span class="err">"</span>
+          <span class="o">},</span>
+          <span class="s">"name"</span> <span class="k">:</span> <span class="o">{</span>
+            <span class="err">"</span><span class="k">type</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">string</span><span class="err">"</span>
+          <span class="o">},</span>
+          <span class="s">"age"</span> <span class="k">:</span> <span class="o">{</span>
+            <span class="err">"</span><span class="kt">exclusiveMaximum</span><span class="err">"</span> <span class="kt">:</span> <span class="kt">false</span><span class="o">,</span>
+            <span class="err">"</span><span class="kt">format</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">int32</span><span class="err">"</span><span class="o">,</span>
+            <span class="s">"maximum"</span> <span class="k">:</span> <span class="err">2147483647</span><span class="o">,</span>
+            <span class="s">"exclusiveMinimum"</span> <span class="k">:</span> <span class="kt">false</span><span class="o">,</span>
+            <span class="s">"minimum"</span> <span class="k">:</span> <span class="kt">-</span><span class="err">2147483648</span><span class="o">,</span>
+            <span class="s">"type"</span> <span class="k">:</span> <span class="err">"</span><span class="kt">integer</span><span class="err">"</span>
+          <span class="o">}</span>
+        <span class="o">},</span>
+        <span class="s">"required"</span> <span class="k">:</span> <span class="err">[</span>
+          <span class="err">"</span><span class="kt">id</span><span class="err">"</span><span class="o">,</span>
+          <span class="s">"name"</span><span class="o">,</span>
+          <span class="s">"age"</span>
+        <span class="err">]</span>
+      <span class="o">},</span>
+      <span class="s">"Success"</span> <span class="k">:</span> <span class="o">{</span>
+        <span class="err">"</span><span class="k">type</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">object</span><span class="err">"</span><span class="o">,</span>
+        <span class="err">"</span><span class="kt">properties</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+          <span class="err">"</span><span class="kt">value</span><span class="err">"</span> <span class="kt">:</span> <span class="o">{</span>
+            <span class="err">"</span><span class="kt">$ref</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="k">#</span><span class="kt">/components/schemas/User</span><span class="err">"</span>
+          <span class="o">}</span>
+        <span class="o">},</span>
+        <span class="s">"required"</span> <span class="k">:</span> <span class="err">[</span>
+          <span class="err">"</span><span class="kt">value</span><span class="err">"</span>
+        <span class="err">]</span>
+      <span class="o">}</span>
+    <span class="o">}</span>
+  <span class="o">},</span>
+  <span class="s">"servers"</span> <span class="k">:</span> <span class="err">[</span>
+    <span class="o">{</span>
+      <span class="err">"</span><span class="kt">url</span><span class="err">"</span> <span class="kt">:</span> <span class="err">"</span><span class="kt">http://localhost:</span><span class="err">8080"</span>
+    <span class="o">}</span>
+  <span class="err">]</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+
+</div></div></section><section class="technologies"><div class="container"><div class="row"></div></div></section></main><footer id="site-footer"><div class="container"><div class="row"><div class="col-xs-6"><p>itinere is designed and developed by <a href="http://vectos.net" target="_blank">Vectos</a></p></div><div class="col-xs-6"><p class="text-right"><a href="https://github.com/vectos/itinere"><span class="fa fa-github"></span>View on GitHub</a></p></div></div><div class="row"><div class="col-xs-6"><p>Website built with <a href="https://47deg.github.io/sbt-microsites/" target="_blank">Sbt-microsites</a> - © 2016 <a href="https://www.47deg.com/" target="_blank">47 Degrees</a></p></div></div></div></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script><script src="/itinere/highlight/highlight.pack.js"></script><script>hljs.configure({
 languages:['scala','java','bash']
 });
 hljs.initHighlighting();
